@@ -5,7 +5,7 @@ import { useContext } from "react";
 const ProtectedRoutes = ({ children }) => {
   const appStateContext = useContext(AppStateContext);
   if (appStateContext?.state.loggedIn) {
-    return children; // Using fragments <>...</> to wrap children
+    return children;
   } else {
     return <Navigate to="/login" />;
   }
