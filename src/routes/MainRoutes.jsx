@@ -1,13 +1,12 @@
 import { Routes, Route } from "react-router-dom";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
-import OrderScreen from "../pages/OrderScreen";
-import AdminUserScreen from "../pages/AdminUserScreen";
-import AdminMenuScreen from "../pages/AdminMenuScreen";
-import AdminOrderScreen from "../pages/AdminOrderScreen";
 import ErrorScreen from "../pages/ErrorScreen";
 import HomeScreen from "../pages/HomeScreen";
-import AdminProtectedRoutes from "./AdminProtectedRoutes";
+import BeachScreen from "../pages/BeachScreen";
+import SportScreen from "../pages/SportScreen";
+import TravelScreen from "../pages/TravelScreen";
+import FoodScreen from "../pages/FoodScreen";
 
 const MainRoutes = () => {
   return (

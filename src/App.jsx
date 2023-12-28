@@ -9,7 +9,9 @@ import "bootstrap/dist/js/bootstrap.bundle";
 import { AppStateProvider, AppStateContext } from "./state/AppProvider";
 import ProtectedRoutes from "./routes/ProtectedRoutes";
 import MainRoutes from "./routes/MainRoutes";
-import LoginScreen from "./pages/login/LoginScreen";
+import AdminRoutes from "./routes/AdminRoutes";
+import LoginScreen from "./pages/LoginScreen";
+import ErrorScreen from "./pages/ErrorScreen";
 
 initializeIcons();
 
