@@ -1,17 +1,17 @@
-import React, { useEffect, useContext } from "react";
-import { HashRouter, Routes, Route } from "react-router-dom";
 import { initializeIcons } from "@fluentui/react";
+import React, { useContext, useEffect } from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
-import "./index.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle";
+import "./index.css";
 
-import { AppStateProvider, AppStateContext } from "./state/AppProvider";
-import ProtectedRoutes from "./routes/ProtectedRoutes";
-import MainRoutes from "./routes/MainRoutes";
-import AdminRoutes from "./routes/AdminRoutes";
-import LoginScreen from "./pages/LoginScreen";
 import ErrorScreen from "./pages/ErrorScreen";
+import LoginScreen from "./pages/login/LoginScreen";
+import AdminRoutes from "./routes/AdminRoutes";
+import MainRoutes from "./routes/MainRoutes";
+import ProtectedRoutes from "./routes/ProtectedRoutes";
+import { AppStateContext, AppStateProvider } from "./state/AppProvider";
 
 initializeIcons();
 
@@ -21,20 +21,15 @@ function App() {
 	useEffect(() => {
 		document.body.classList.remove("app-mode-dark", "app-mode-light");
 		document.body.classList.add(
-			`app-mode-${appStateContext?.state.darkMode ? "dark" : "light"}`
+			`app-mode-${appStateContext?.state.isDarkMode ? "dark" : "light"}`
 		);
-	}, [appStateContext?.state.darkMode]);
+	}, [appStateContext?.state.isDarkMode]);
 
 	return (
 		<AppStateProvider>
-			<HashRouter>
+			<BrowserRouter>
 				<Routes>
-					<Route
-						path="/*"
-						element={
-              <MainRoutes />
-						}
-					/>
+					<Route path="/login" element={<LoginScreen />} />
 					<Route
 						path="/jr-pics-admin"
 						element={
@@ -43,12 +38,12 @@ function App() {
 							</ProtectedRoutes>
 						}
 					/>
-					<Route path="/login" element={<LoginScreen />} />
+					<Route path="/*" element={<MainRoutes />} />
 					<Route path="*" element={<ErrorScreen />} />
 				</Routes>
-			</HashRouter>
+			</BrowserRouter>
 		</AppStateProvider>
-	);
+	);  
 }
 
 export default App;

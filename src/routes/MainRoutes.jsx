@@ -15,12 +15,7 @@ const MainRoutes = () => {
       <Routes>
         <Route path="/" element={<HomeScreen />} />
         <Route path="/beach" element={<BeachScreen />} />
-        <Route
-          path="/sports"
-          element={
-            <SportScreen />
-          }
-        />
+        <Route path="/sports" element={<SportScreen />} />
         <Route path="/travel" element={<TravelScreen />} />
         <Route path="/food" element={<FoodScreen />} />
         <Route path="*" element={<ErrorScreen />} />
