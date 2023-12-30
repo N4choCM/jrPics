@@ -1,5 +1,11 @@
 # Changelog
 
+## Features
+
+### 0.2.0
+
+- ✅ ADDED: LoginScreen and business logic without DB
+
 ## Fixes
 
 ### 0.1.2
