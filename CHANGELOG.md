@@ -2,6 +2,12 @@
 
 ## Features
 
+### 0.3.0
+
+- ✅ ADDED: Navbar
+
+## Features
+
 ### 0.2.0
 
 - ✅ ADDED: LoginScreen and business logic without DB
