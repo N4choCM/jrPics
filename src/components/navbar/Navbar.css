@@ -1,51 +1,61 @@
 .img-logo {
-  width: 4rem;
+	width: 4rem;
 }
 
-.img-logo-white{
-  filter: contrast(0) brightness(10);
+.red-white-text:hover {
+	color: white !important;
 }
 
-.red-white-text:hover{
-  color: white !important;
+.bg-navbar-light {
+	background-color: #f5f5f5 !important;
 }
 
-.bg-navbar-light{
-  background-color: #F5F5F5 !important;
+.bg-navbar-dark {
+	background-color: #36454f !important;
 }
 
-.bg-navbar-dark{
-  background-color: #36454F !important;
+.hover-custom-light:hover {
+	background-color: #eaeaea !important;
+	border-radius: 5px;
 }
 
-.hover-custom:hover{
-  background-color: #5f42b0 !important;
-  border-radius: 5px;
+.hover-custom-dark:hover {
+	background-color: #2f4f4f !important;
+	border-radius: 5px;
 }
 
 .navbar-brand div {
-  display: flex; /* Usa flexbox para alinear los elementos en línea */
-  align-items: center; /* Centra verticalmente los elementos en el contenedor */
+	display: flex; /* Usa flexbox para alinear los elementos en línea */
+	align-items: center; /* Centra verticalmente los elementos en el contenedor */
 }
-h4, h6{
-  font-family: monospace;
+h4,
+h6 {
+	font-family: monospace;
 }
 
 .form-check-input:checked {
-  background-color: #333 !important;
-  border-color: #333 !important;
+	background-color: #333 !important;
+	border-color: #333 !important;
 }
 
-.form-check-input:focus{
-box-shadow: none !important;
+.form-check-input:focus {
+	box-shadow: none !important;
 }
 
-.custom-pointer{
-cursor: pointer;
+.custom-pointer {
+	cursor: pointer;
 }
 
 @media (min-width: 992px) {
-.swal2-popup {
-  margin-top: 5rem !important;
+	.swal2-popup {
+		margin-top: 5rem !important;
+	}
 }
+
+.cm-pointer {
+	cursor: pointer !important;
+}
+
+.cm-hr-light {
+  border-top: 1px solid #eaeaea !important;
 }
