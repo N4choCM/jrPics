@@ -2,6 +2,14 @@
 
 ## Features
 
+### 0.5.0
+
+- ✅ ADDED: Responsive banner
+- ⬆ UPDATED: Typography for `Nacho Campos Dev` in footer
+- ⬆ UPDATED: Transparent navbar until user scrolls
+
+## Features
+
 ### 0.4.0
 
 - ✅ ADDED: Footer

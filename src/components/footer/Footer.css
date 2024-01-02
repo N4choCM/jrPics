@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Crete+Round&family=Press+Start+2P&family=VT323&display=swap');
+
 .bg-footer-dark {
 	background-color: #2F4F4F !important;
 }
@@ -34,4 +36,10 @@
 
 .email-icon-size {
   font-size: 1.25rem !important;
+}
+
+.arcade-font {
+	margin-left: 0.25rem;
+  font-family: 'Press Start 2P', monospace;
+	font-size: 0.75rem;
 }
