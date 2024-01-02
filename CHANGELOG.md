@@ -2,6 +2,12 @@
 
 ## Features
 
+### 0.4.0
+
+- ✅ ADDED: Footer
+
+## Features
+
 ### 0.3.0
 
 - ✅ ADDED: Navbar

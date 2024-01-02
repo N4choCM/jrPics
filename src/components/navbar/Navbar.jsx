@@ -311,8 +311,8 @@ const NavBar = () => {
 									<FaInstagram
 										className={
 											!appStateContext?.state.isDarkMode
-												? "text-dark fa fa-github me-1"
-												: "text-white fa fa-github me-1"
+												? "text-dark me-1"
+												: "text-white me-1"
 										}
 									/>
 									<span
@@ -342,8 +342,8 @@ const NavBar = () => {
 									<FaFacebookSquare
 										className={
 											!appStateContext?.state.isDarkMode
-												? "text-dark fa fa-github me-1"
-												: "text-white fa fa-github me-1"
+												? "text-dark me-1"
+												: "text-white me-1"
 										}
 									/>
 									<span

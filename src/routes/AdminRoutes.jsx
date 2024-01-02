@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router-dom";
-import Footer from "../components/Footer";
+import Footer from "../components/footer/Footer";
 import Navbar from "../components/navbar/Navbar";
 import ErrorScreen from "../pages/ErrorScreen";
 
