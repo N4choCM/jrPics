@@ -13,11 +13,12 @@ import {
 } from "@fluentui/react-icons";
 import { FaInstagram, FaFacebookSquare } from "react-icons/fa";
 import { GrContact } from "react-icons/gr";
-import { useContext } from "react";
+import { useContext, useState, useEffect } from "react";
 import { AppStateContext } from "../../state/AppProvider";
 
 const NavBar = () => {
 	const appStateContext = useContext(AppStateContext);
+	const [scrolled, setScrolled] = useState(false);
 
 	const showContactInfo = () => {
 		Swal.fire({
@@ -36,10 +37,28 @@ const NavBar = () => {
 		appStateContext?.dispatch({ type: "TOGGLE_DARK_MODE" });
 	};
 
+	useEffect(() => {
+    const handleScroll = () => {
+      const offset = window.scrollY;
+      if (offset > 10) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
 	return (
 		<header className="fixed-top">
 			<nav
 				className={`navbar navbar-expand-lg navbar-dark ${
+					!scrolled ? "bg-transparent" : 
 					appStateContext?.state.isDarkMode
 						? "bg-navbar-dark"
 						: "bg-navbar-light"
