@@ -126,7 +126,7 @@ const Footer = () => {
 							<span>
 								Developed with ❤ by{" "}
 								<a
-									className="no-decoration social-hover fw-bold"
+									className="no-decoration social-hover fw-bold arcade-font"
 									href="https://nachocamposdev.netlify.app/"
 									target="_blank"
 								>
