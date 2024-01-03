@@ -2,6 +2,13 @@
 
 ## Features
 
+### 0.6.0
+
+- ✅ ADDED: About section
+- 👾 FIXED: Global darkMode change in body element
+
+## Features
+
 ### 0.5.0
 
 - ✅ ADDED: Responsive banner
