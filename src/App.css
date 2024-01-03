@@ -45,12 +45,12 @@ body.app-mode-dark {
 }
 
 body.app-mode-light {
-	background-color: #f0f0f0;
+	background-color: #F5F5F5;
 	color: black;
 }
 
 ::selection {
-	background-color: #ff8062;
+	background-color: #CD7F32;
 }
 
 ::-webkit-scrollbar {
