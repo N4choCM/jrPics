@@ -38,6 +38,13 @@ const NavBar = () => {
 	};
 
 	useEffect(() => {
+    document.body.classList.remove("app-mode-dark", "app-mode-light");
+    document.body.classList.add(
+      `app-mode-${appStateContext?.state.isDarkMode ? "dark" : "light"}`
+    );
+  }, [appStateContext?.state.isDarkMode]);
+
+	useEffect(() => {
     const handleScroll = () => {
       const offset = window.scrollY;
       if (offset > 10) {
@@ -69,7 +76,7 @@ const NavBar = () => {
 						to="home"
 						smooth={true}
 						duration={200}
-						activeClassName="active"
+						activeclassname="active"
 						className="navbar-brand custom-pointer"
 					>
 						<div>
@@ -128,7 +135,7 @@ const NavBar = () => {
 									to="home"
 									smooth={true}
 									duration={200}
-									activeClassName="active"
+									activeclassname="active"
 									className="nav-link custom-pointer"
 								>
 									<Home20Regular
@@ -160,7 +167,7 @@ const NavBar = () => {
 									to="about"
 									smooth={true}
 									duration={200}
-									activeClassName="active"
+									activeclassname="active"
 									className="nav-link custom-pointer"
 								>
 									<PersonInfo20Regular
@@ -192,7 +199,7 @@ const NavBar = () => {
 									to="projects"
 									smooth={true}
 									duration={200}
-									activeClassName="active"
+									activeclassname="active"
 									className={`nav-link dropdown-toggle custom-pointer ${
 										appStateContext?.state.isDarkMode
 											? "text-white"
@@ -235,7 +242,7 @@ const NavBar = () => {
 													: "hover-custom-light"
 											}`}
 											to="#"
-											activeClassName="active"
+											activeclassname="active"
 											role="button"
 											data-bs-toggle="dropdown"
 											aria-expanded="false"
@@ -258,7 +265,7 @@ const NavBar = () => {
 													: "hover-custom-light"
 											}`}
 											to="#"
-											activeClassName="active"
+											activeclassname="active"
 											role="button"
 											data-bs-toggle="dropdown"
 											aria-expanded="false"
@@ -281,7 +288,7 @@ const NavBar = () => {
 													: "hover-custom-light"
 											}`}
 											to="#"
-											activeClassName="active"
+											activeclassname="active"
 											role="button"
 											data-bs-toggle="dropdown"
 											aria-expanded="false"
@@ -304,7 +311,7 @@ const NavBar = () => {
 													: "hover-custom-light"
 											}`}
 											to="#"
-											activeClassName="active"
+											activeclassname="active"
 											role="button"
 											data-bs-toggle="dropdown"
 											aria-expanded="false"
@@ -429,11 +436,6 @@ const NavBar = () => {
 			</nav>
 		</header>
 	);
-};
-
-NavBar.propTypes = {
-	darkMode: PropTypes.bool.isRequired,
-	changeDarkMode: PropTypes.func.isRequired,
 };
 
 export default NavBar;
