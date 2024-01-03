@@ -1,0 +1,19 @@
+.border-custom {
+	border-radius: 30px;
+	height: 25rem !important;
+}
+
+.custom-shadow-pic-light {
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px !important;
+	object-fit: cover;
+}
+
+.custom-shadow-pic-dark {
+	box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px !important;
+	object-fit: cover;
+}
+
+.text-justify-both {
+	text-align: justify !important;
+	text-justify: inter-word !important;
+}
